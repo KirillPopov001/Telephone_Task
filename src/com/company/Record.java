@@ -31,6 +31,10 @@ public class Record {
         return this.phoneNumber;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
     @Override
     public String toString() {
         return id + " " + phoneNumber + " " + name;
