@@ -31,6 +31,7 @@ public class PhoneBook {
         System.out.print("Input a name: ");
         String imya = in.nextLine();
         if(num == "" || imya == "") throw new RecordNotValid("Не заполнены имя и/или номер телефона");
+        if(num == null || imya == null) throw new RecordNotValid("Не заполнены имя и/или номер телефона");
         int a = 0;
         for(Record i: list){
             if(i.getId() == record.getId()){
