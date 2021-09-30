@@ -37,10 +37,10 @@ public class PhoneBook {
             if(i.getId() == record.getId()){
                 i.setPhoneNumber(num);
                 i.setName(imya);
+                a++;
             }
-            a++;
         }
-        if (a == list.size()) throw new RecordNotFound("Не существующий номер");
+        if (a == 0) throw new RecordNotFound("Не существующий номер");
     }
 
     public void deleteRecord(long id) throws RecordNotFound {
